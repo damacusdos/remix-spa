@@ -5,6 +5,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+// css
+import "./globals.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,7 +17,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-[#FFFCF0]">
         {children}
         <ScrollRestoration />
         <Scripts />
