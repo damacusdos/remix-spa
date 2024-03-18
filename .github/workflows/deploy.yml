@@ -44,7 +44,7 @@ jobs:
       - name: Build Remix
         run: pnpm run build
 
-       - name: Copy index.html to 404.html
+      - name: Copy index.html to 404.html
         run: cp ./build/client/index.html ./build/client/404.html
 
       - name: Upload artifact
